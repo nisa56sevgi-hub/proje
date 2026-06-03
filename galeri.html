@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html>
 <head>
@@ -32,7 +30,8 @@ function MM_swapImage() { //v3.0
 </script>
 </head>
 
-<body onLoad="MM_preloadImages('buyukresim.jpg','WhatsApp Image 2026-06-02 at 22.01.07.jpeg','fotoğraf.jpeg')">
+<!-- onLoad kısmındaki resim yolları da klasöre göre güncellendi -->
+<body onLoad="MM_preloadImages('fotoğraflar/buyukresim.jpg','fotoğraflar/WhatsApp Image 2026-06-02 at 22.01.07.jpeg','fotoğraflar/fotoğraf.jpeg')">
 <div id="kapsayıcı">
   <div id="menu">
 	<ul>
@@ -46,15 +45,21 @@ function MM_swapImage() { //v3.0
   </div>
 	
   <div id="BANNER">
-  <img src="fotoğraflar/banner.jpeg" width="1000" height="280" alt=""/> 
+    <img src="fotoğraflar/banner.jpeg" width="1000" height="280" alt=""/> 
   </div>
+  
   <div id="icerik"> 
- 	 <img src="fotoğraflar/buyukresim.jpg" alt="" width="332" height="330" id="büyükResim"/>
- 	   
- 	  <img src="fotoğraflar/buyukresim.jpg" alt="" width="200" height="100" onMouseOver="MM_swapImage('büyükResim','','fb82a4d4-a17a-4df3-9ea6-b9b54077541b.jpg',1)" onMouseOut="MM_swapImgRestore()"/>  
-	  <img src="fotoğraflar/WhatsApp Image 2026-06-02 at 22.01.07.jpeg" alt="" width="200" height="100" onMouseOver="MM_swapImage('büyükResim','','WhatsApp Image 2026-06-02 at 22.01.07.jpeg',1)" onMouseOut="MM_swapImgRestore()"/>
-      <img src="fotoğraflar/fotoğraf.jpeg" alt="" width="200" height="100" onMouseOver="MM_swapImage('büyükResim','','fotoğraf.jpeg',1)" onMouseOut="MM_swapImgRestore()"/>
-	</div>
+    <!-- Büyük hedef resim -->
+    <img src="fotoğraflar/buyukresim.jpg" alt="" width="332" height="330" id="büyükResim"/>
+ 	
+    <!-- Üzerine gelinecek küçük resimler (Klasör yolları düzeltildi) -->
+    <img src="fotoğraflar/buyukresim.jpg" alt="" width="200" height="100" onMouseOver="MM_swapImage('büyükResim','','fotoğraflar/buyukresim.jpg',1)" onMouseOut="MM_swapImgRestore()"/>  
+    
+    <img src="fotoğraflar/WhatsApp Image 2026-06-02 at 22.01.07.jpeg" alt="" width="200" height="100" onMouseOver="MM_swapImage('büyükResim','','fotoğraflar/WhatsApp Image 2026-06-02 at 22.01.07.jpeg',1)" onMouseOut="MM_swapImgRestore()"/>
+    
+    <img src="fotoğraflar/fotoğraf.jpeg" alt="" width="200" height="100" onMouseOver="MM_swapImage('büyükResim','','fotoğraflar/fotoğraf.jpeg',1)" onMouseOut="MM_swapImgRestore()"/>
+  </div>
+  
   <div id="footer"><p>&copy;2026 HAYRUNNİSA SEVGİ TARAFINDAN FİNAL SINAVI İÇİN YAPILMIŞTIR.</p></div>
 </div>
 </body>
